@@ -1,5 +1,5 @@
 import React from "react";
-import BookingImage from "../../assets/BookingImage.avif";
+import BookingImage from "../../assets/all2.jpg";
 
 import { FaCheckCircle } from "react-icons/fa";
 
@@ -15,7 +15,7 @@ function BookingLeft() {
       />
 
       
-      <div className="absolute inset-0 bg-black/60"></div>
+      <div className="absolute inset-0 bg-black/30"></div>
 
       
       <div className="absolute inset-0 z-10 flex flex-col justify-end px-10 pb-12">
@@ -63,6 +63,16 @@ function BookingLeft() {
             <FaCheckCircle className="text-yellow-400" />
             <span>Cinematic Videos</span>
           </div>
+
+          <div className="flex items-center gap-3">
+                <FaCheckCircle className="text-yellow-400" />
+                <span>Fashion & Editorial</span>
+              </div>
+
+              <div className="flex items-center gap-3">
+                <FaCheckCircle className="text-yellow-400" />
+                <span>Cinematic Videos</span>
+              </div>
 
         </div>
 

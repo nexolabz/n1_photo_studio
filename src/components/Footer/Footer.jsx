@@ -114,12 +114,12 @@ function Footer() {
 
               <div className="flex gap-3 items-center">
                 <FaPhoneAlt className="text-yellow-400" />
-                +91 9876543210
+                +91 9999999999
               </div>
 
               <div className="flex gap-3 items-center">
                 <FaEnvelope className="text-yellow-400" />
-                hello@lensstudio.com
+                lensstudio@gmail.com
               </div>
 
             </div>

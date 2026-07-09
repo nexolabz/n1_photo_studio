@@ -1,4 +1,4 @@
-import Aboutimg from "../../assets/Abouti.png";
+import Aboutimg from "../../assets/Abouti.jpg";
 import { FaCheckCircle } from "react-icons/fa";
 
 function About() {
@@ -15,7 +15,7 @@ function About() {
       />
 
       
-      <div className="absolute inset-0 bg-black/55"></div>
+      <div className="absolute inset-0 "></div>
 
       
       <div className="relative z-10 w-full max-w-7xl mx-auto px-6 sm:px-10 lg:px-16">
@@ -40,7 +40,7 @@ function About() {
             </h2>
 
             
-            <p className="mt-8 text-gray-300 text-sm sm:text-base leading-7 md:leading-8">
+            <p className="mt-8 text-black text-sm sm:text-base leading-7 md:leading-8">
               Lens Studio Photography is a creative photography studio
               dedicated to capturing timeless moments. We believe every
               frame tells a story filled with emotions, passion, and
@@ -83,11 +83,7 @@ function About() {
             </div>
 
             
-            <button
-              className="mt-12 rounded-full border border-yellow-400 px-6 py-3 md:px-8 md:py-3 text-yellow-400 hover:bg-yellow-400 hover:text-black transition-all duration-300"
-            >
-              Read More
-            </button>
+            
 
           </div>
 

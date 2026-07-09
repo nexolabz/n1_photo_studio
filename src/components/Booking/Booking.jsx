@@ -7,7 +7,7 @@ import Footer from "../Footer/Footer";
 
 function Booking() {
   return (
-    <section className="min-h-screen bg-black text-white">
+    <section className="min-h-screen bg-[#F5F1ED] text-black">
 
     
       <div className="max-w-7xl mx-auto px-6 py-8 flex items-center justify-between">

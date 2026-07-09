@@ -5,7 +5,7 @@ function Services() {
   return (
     <section
       id="services"
-      className="bg-black text-white py-24"
+      className="bg-[#F5F1ED] text-black py-24"
     >
       <div className="max-w-7xl mx-auto px-8">
 

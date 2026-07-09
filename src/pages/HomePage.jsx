@@ -13,8 +13,8 @@ function HomePage() {
 
       <Home />
       <Profile />
-      <About />
       <Services />
+      <About />
       <Contact />
 
       <Footer />

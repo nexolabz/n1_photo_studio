@@ -12,7 +12,7 @@ function Portfolio() {
     "Commercial",
   ];
 
-  const [selectedCategory, setSelectedCategory] = useState("All");
+  const [selectedCategory, setSelectedCategory] = useState("All", "Wedding","Fashion","Portrait","Events","Commercial");
 
   const filteredImages =
     selectedCategory === "All"
@@ -24,78 +24,77 @@ function Portfolio() {
   return (
     <section
       id="portfolio"
-      className="bg-black text-white py-16 md:py-24"
+      className="bg-[#F5F1ED] py-24"
     >
-      <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12">
+      <div className="max-w-7xl mx-auto px-6">
 
         {/* Heading */}
 
         <div className="text-center">
 
-          <p className="uppercase tracking-[3px] md:tracking-[6px] text-yellow-400">
+          <p className="uppercase tracking-[6px] text-yellow-500 font-semibold">
             Portfolio
           </p>
 
-          <h2 className="mt-4 text-4xl sm:text-5xl lg:text-6xl font-black">
+          <h2 className="mt-4 text-5xl md:text-6xl font-black text-black">
             OUR BEST
-            <span className="text-yellow-400">
+            <span className="text-yellow-500">
               {" "}WORK
             </span>
           </h2>
 
-          <p className="mt-5 text-gray-400 text-sm md:text-base">
-            Capturing moments that last forever.
+          <p className="mt-6 text-gray-500 max-w-2xl mx-auto leading-8">
+            Every picture tells a story. Explore our finest work crafted with creativity,
+            passion, and timeless memories.
           </p>
 
         </div>
 
         {/* Category Buttons */}
 
-        <div
-          className="
-          mt-12
-          flex
-          gap-3
-          md:gap-5
-          overflow-x-auto
-          whitespace-nowrap
-          pb-4
-          scrollbar-hide
-          justify-start
-          md:justify-center
-          "
-        >
+        <div className="flex justify-center flex-wrap gap-4 mt-14">
+
           {categories.map((category) => (
 
             <button
               key={category}
               onClick={() => setSelectedCategory(category)}
-              className={`flex-shrink-0 px-4 py-2 md:px-6 md:py-3 rounded-full border transition-all duration-300
+              className={`
+              px-7
+              py-3
+              rounded-full
+              border
+              font-semibold
+              duration-300
 
               ${
                 selectedCategory === category
-                  ? "bg-yellow-400 text-black border-yellow-400"
-                  : "border-gray-600 hover:border-yellow-400 hover:text-yellow-400"
-              }`}
+                  ? "bg-yellow-500 border-yellow-500 text-black"
+                  : "border-gray-300 text-gray-700 hover:bg-yellow-500 hover:text-black hover:border-yellow-500"
+              }
+              `}
             >
               {category}
             </button>
 
           ))}
+
         </div>
 
-        {/* Portfolio Images */}
+        {/* Gallery */}
 
         <div
           className="
-          mt-12
+          mt-20
           grid
           grid-cols-1
           sm:grid-cols-2
           lg:grid-cols-3
-          gap-6
+          xl:grid-cols-4
+          gap-10
           "
         >
+
           {filteredImages.map((item) => (
 
             <PortfolioCard
@@ -106,6 +105,7 @@ function Portfolio() {
             />
 
           ))}
+
         </div>
 
       </div>

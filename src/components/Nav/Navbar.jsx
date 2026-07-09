@@ -12,14 +12,14 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="sticky top-0 left-0 z-50 w-full shadow-xl bg-black backdrop-blur-md">
+      <nav className="sticky top-0 left-0 z-50 w-full shadow-xl bg-white backdrop-blur-md">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-8 py-5">
           <h2 className="text-3xl font-black tracking-wider">
             LENS
             <span className="text-yellow-400"> STUDIO</span>
           </h2>
 
-          <ul className="hidden md:flex items-center gap-10 text-white">
+          <ul className="hidden md:flex items-center gap-10 text-black">
             <li>
               <Link
                 to="home"
@@ -46,18 +46,6 @@ const Navbar = () => {
 
             <li>
               <Link
-                to="about"
-                smooth={true}
-                duration={500}
-                offset={-80}
-                className="cursor-pointer hover:text-yellow-400 transition"
-              >
-                About
-              </Link>
-            </li>
-
-            <li>
-              <Link
                 to="services"
                 smooth={true}
                 duration={500}
@@ -65,6 +53,18 @@ const Navbar = () => {
                 className="cursor-pointer hover:text-yellow-400 transition"
               >
                 Services
+              </Link>
+            </li>
+
+            <li>
+              <Link
+                to="about"
+                smooth={true}
+                duration={500}
+                offset={-80}
+                className="cursor-pointer hover:text-yellow-400 transition"
+              >
+                About
               </Link>
             </li>
 
