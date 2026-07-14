@@ -1,4 +1,4 @@
-import contactBg from "../../assets/contact.jpg";
+import contactBg from "../../assets/contact.webp";
 import {
   FaPhoneAlt,
   FaEnvelope,
@@ -59,7 +59,7 @@ function Contact() {
               </span>
             </h2>
 
-            <p className="text-gray-300 mt-8 leading-8">
+            <p className="text-yellow-500 text-xl mt-8 leading-8">
               We'd love to hear your story.
               Whether it's your wedding,
               portrait session or commercial
@@ -70,18 +70,18 @@ function Contact() {
             <div className="space-y-6 mt-12">
 
               <div className="flex items-center gap-4">
-                <FaMapMarkerAlt className="text-yellow-400 text-xl" />
+                <FaMapMarkerAlt className="text-yellow-500 text-xl" />
                 <span>Bhopal, Madhya Pradesh</span>
               </div>
 
               <div className="flex items-center gap-4">
-                <FaPhoneAlt className="text-yellow-400 text-xl" />
+                <FaPhoneAlt className="text-yellow-500 text-xl" />
                 
                 <span>+91 9999999999</span>
               </div>
 
               <div className="flex items-center gap-4">
-                <FaEnvelope className="text-yellow-400 text-xl" />
+                <FaEnvelope className="text-yellow-500 text-xl" />
                 <span>lensstudio@gmail.com</span>
               </div>
 
@@ -91,11 +91,11 @@ function Contact() {
 
             <div className="flex gap-5 mt-10">
 
-              <div className="w-12 h-12 rounded-full border border-yellow-400 flex items-center justify-center hover:bg-yellow-400 hover:text-black duration-300 cursor-pointer">
+              <div className="w-12 h-12 rounded-full border border-yellow-500 flex items-center justify-center hover:bg-yellow-400 hover:text-black duration-300 cursor-pointer">
                 <FaInstagram />
               </div>
 
-              <div className="w-12 h-12 rounded-full border border-yellow-400 flex items-center justify-center hover:bg-yellow-400 hover:text-black duration-300 cursor-pointer">
+              <div className="w-12 h-12 rounded-full border border-yellow-500 flex items-center justify-center hover:bg-yellow-400 hover:text-black duration-300 cursor-pointer">
                 <FaFacebookF />
               </div>
 

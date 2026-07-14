@@ -1,38 +1,37 @@
-function PortfolioCard({ image, title, category }) {
+function PortfolioCard({ image }) {
   return (
     <div
       className="
-      bg-white
-      p-3
-      rounded-md
-      shadow-xl
-      transition-all
-      duration-500
-      hover:scale-105
-      hover:-rotate-2
-      hover:shadow-2xl
-      cursor-pointer
+        group
+        overflow-hidden
+        rounded-2xl
+        bg-white
+        shadow-lg
+        cursor-pointer
       "
     >
       <img
         src={image}
-        alt={title}
+        alt=""
         className="
-        w-full
-        h-[300px]
-        object-cover
-        rounded-sm
+          w-full
+          h-[320px]
+          object-cover
+          duration-500
+          group-hover:scale-110
         "
       />
 
-      <div className="pt-4 pb-2 text-center">
-
-        <h3 className="text-xl font-bold text-black">
-          {title}
-        </h3>
-
-        
-      </div>
+      <div
+        className="
+          absolute
+          inset-0
+          bg-black/40
+          opacity-0
+          group-hover:opacity-100
+          duration-500
+        "
+      ></div>
     </div>
   );
 }

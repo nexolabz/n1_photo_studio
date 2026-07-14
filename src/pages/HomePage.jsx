@@ -9,6 +9,8 @@ import Footer from "../components/Footer/Footer";
 function HomePage() {
   return (
     <>
+    
+    
       <Nav />
 
       <Home />
@@ -18,6 +20,8 @@ function HomePage() {
       <Contact />
 
       <Footer />
+
+     
     </>
   );
 }

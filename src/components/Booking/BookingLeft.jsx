@@ -1,5 +1,5 @@
 import React from "react";
-import BookingImage from "../../assets/all2.jpg";
+import BookingImage from "../../assets/all2.webp";
 
 import { FaCheckCircle } from "react-icons/fa";
 

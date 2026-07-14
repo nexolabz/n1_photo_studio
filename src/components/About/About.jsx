@@ -1,4 +1,4 @@
-import Aboutimg from "../../assets/Abouti.jpg";
+import Aboutimg from "../../assets/Abouti.webp";
 import { FaCheckCircle } from "react-icons/fa";
 
 function About() {
@@ -25,7 +25,7 @@ function About() {
           <div className="max-w-2xl">
 
             
-            <p className="uppercase tracking-[3px] md:tracking-[6px] text-yellow-400 font-semibold">
+            <p className="uppercase tracking-[3px] md:tracking-[6px] text-yellow-500 font-semibold">
               About Us
             </p>
 
@@ -34,7 +34,7 @@ function About() {
               WE CAPTURE
               <br />
               TIMELESS{" "}
-              <span className="text-yellow-400">
+              <span className="text-yellow-500">
                 STORIES
               </span>
             </h2>
@@ -50,33 +50,33 @@ function About() {
             
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 mt-10">
 
-              <div className="flex items-center gap-3">
-                <FaCheckCircle className="text-yellow-400" />
+              <div className="flex text-2xl items-center gap-3">
+                <FaCheckCircle className="text-yellow-500" />
                 <span>Wedding Photography</span>
               </div>
 
-              <div className="flex items-center gap-3">
-                <FaCheckCircle className="text-yellow-400" />
+              <div className="flex text-2xl items-center gap-3">
+                <FaCheckCircle className="text-yellow-500" />
                 <span>Commercial Shoots</span>
               </div>
 
-              <div className="flex items-center gap-3">
-                <FaCheckCircle className="text-yellow-400" />
+              <div className="flex text-2xl items-center gap-3">
+                <FaCheckCircle className="text-yellow-500" />
                 <span>Portrait Sessions</span>
               </div>
 
-              <div className="flex items-center gap-3">
-                <FaCheckCircle className="text-yellow-400" />
+              <div className="flex text-2xl items-center gap-3">
+                <FaCheckCircle className="text-yellow-500" />
                 <span>Fashion Photography</span>
               </div>
 
-              <div className="flex items-center gap-3">
-                <FaCheckCircle className="text-yellow-400" />
+              <div className="flex text-2xl items-center gap-3">
+                <FaCheckCircle className="text-yellow-500" />
                 <span>Fashion & Editorial</span>
               </div>
 
-              <div className="flex items-center gap-3">
-                <FaCheckCircle className="text-yellow-400" />
+              <div className="flex text-2xl items-center gap-3">
+                <FaCheckCircle className="text-yellow-500" />
                 <span>Cinematic Videos</span>
               </div>
 
