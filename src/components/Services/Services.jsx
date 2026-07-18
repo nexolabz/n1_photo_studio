@@ -1,9 +1,11 @@
 import serviceData from "./ServicesData";
 import ServiceCard from "./ServicesCard";
+import FadeIn from "../FadeIn";
 
 function Services() {
   return (
-    <section id="services" className="bg-[#F5F1ED] text-black py-24">
+    <FadeIn>
+    <section id="services" className="bg-[#F5F1ED] text-black py-8">
       <div className="max-w-7xl mx-auto px-8">
         <div className="text-center">
           <p className="uppercase tracking-[6px] text-yellow-400">Services</p>
@@ -31,6 +33,7 @@ function Services() {
         </div>
       </div>
     </section>
+    </FadeIn>
   );
 }
 

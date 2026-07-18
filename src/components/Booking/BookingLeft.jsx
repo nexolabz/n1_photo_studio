@@ -1,5 +1,5 @@
 import React from "react";
-import BookingImage from "../../assets/all2.webp";
+import BookingImage from "../../assets/all2.jpg";
 
 import { FaCheckCircle } from "react-icons/fa";
 
@@ -18,7 +18,7 @@ function BookingLeft() {
       <div className="absolute inset-0 bg-black/30"></div>
 
       
-      <div className="absolute inset-0 z-10 flex flex-col justify-end px-10 pb-12">
+      <div className="absolute inset-0 z-10 flex flex-col justify-end px-10 pb-45">
 
         
         <p className="uppercase tracking-[6px] text-yellow-400 font-semibold text-sm">
@@ -35,23 +35,23 @@ function BookingLeft() {
         </h2>
 
         
-        <p className="mt-6 text-gray-300 leading-8 max-w-md">
+        <p className="mt-6 text-gray-200 leading-8 max-w-md">
           Every unforgettable moment deserves to be captured with
           creativity, passion and timeless quality. Reserve your
           session today and let us turn your memories into stories.
         </p>
 
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-10 text-xl">
 
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-3 ">
             <FaCheckCircle className="text-yellow-400" />
             <span>Wedding Photography</span>
           </div>
 
           <div className="flex items-center gap-3">
             <FaCheckCircle className="text-yellow-400" />
-            <span>Fashion Photography</span>
+            <span>Portraits Photography</span>
           </div>
 
           <div className="flex items-center gap-3">
@@ -71,7 +71,7 @@ function BookingLeft() {
 
               <div className="flex items-center gap-3">
                 <FaCheckCircle className="text-yellow-400" />
-                <span>Cinematic Videos</span>
+                <span>Events Photography</span>
               </div>
 
         </div>

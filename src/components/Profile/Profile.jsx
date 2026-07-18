@@ -2,6 +2,7 @@ import { useState } from "react";
 import portfolioData from "./PortfolioData";
 import PortfolioStack from "./PortfolioStack";
 import PortfolioGallery from "./PortfolioGallery";
+import FadeIn from "../FadeIn";
 
 function Portfolio() {
   const categories = [
@@ -21,10 +22,14 @@ function Portfolio() {
   };
 
   return (
+   <FadeIn>
     <section
       id="portfolio"
       className="bg-[#F5F1ED] py-24"
     >
+
+
+      
       <div className="max-w-7xl mx-auto px-6">
 
         <div className="text-center mb-24">
@@ -41,6 +46,8 @@ function Portfolio() {
           </h2>
 
         </div>
+
+      
 
         {categories.map((category) => {
 
@@ -62,7 +69,9 @@ function Portfolio() {
         })}
 
       </div>
+        
     </section>
+  </FadeIn> 
   );
 }
 

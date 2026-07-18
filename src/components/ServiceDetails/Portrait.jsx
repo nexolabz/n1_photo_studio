@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Footer from "../../components/Footer/Footer";
 import { Link } from "react-router-dom";
 import {
   FaArrowLeft,
@@ -7,6 +7,8 @@ import {
   FaCamera,
   FaStar,
 } from "react-icons/fa";
+
+import FadeIn from "../FadeIn";
 
  import fashionHero from "../../assets/portfolio/portrait/p7.webp";
 
@@ -21,6 +23,8 @@ const gallery = [img1, img2, img3, img4, img5, img6];
 
 function Portrait() {
   return (
+
+    <FadeIn>
     <div className="bg-[#F8F6F3] text-black min-h-screen">
 
       
@@ -89,53 +93,7 @@ function Portrait() {
 
       
 
-      <section className="max-w-7xl mx-auto px-6 py-24">
 
-        <div className="text-center">
-
-          <h2 className="text-5xl font-black">
-            WHY CHOOSE
-            <span className="text-yellow-500"> US</span>
-          </h2>
-
-          <p className="mt-6 text-gray-600 max-w-3xl mx-auto leading-8">
-            We help portrait, models and influencers
-            build premium portfolios through creative direction,
-            cinematic lighting and high-end editing.
-          </p>
-
-        </div>
-
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mt-16">
-
-          {[
-            "Editorial Photography",
-            "Studio Shoot",
-            "Outdoor Campaign",
-            "Professional Retouching",
-            "Brand Promotion",
-            "Creative Direction",
-            "Model Portfolio",
-            "Luxury Lighting",
-          ].map((item) => (
-
-            <div
-              key={item}
-              className="bg-white rounded-2xl shadow-lg p-6"
-            >
-              <FaCheckCircle className="text-yellow-500 text-3xl mb-4" />
-
-              <h3 className="font-semibold text-lg">
-                {item}
-              </h3>
-
-            </div>
-
-          ))}
-
-        </div>
-
-      </section>
 
       
 
@@ -160,7 +118,7 @@ function Portrait() {
               key={index}
               src={image}
               alt=""
-              className="rounded-3xl h-[380px] w-full object-cover hover:scale-105 duration-300 cursor-pointer"
+              className="rounded-3xl h-[380px] w-full object-cover hover:scale-105 duration-300 cursor-pointer bg-white p-3 shadow-2xl "
             />
 
           ))}
@@ -249,24 +207,12 @@ function Portrait() {
       </section>
 
       
-
-      <section className="max-w-5xl mx-auto px-6 py-24 text-center">
-
-        <FaStar className="text-yellow-500 text-6xl mx-auto mb-6" />
-
-        <h2 className="text-4xl font-black">
-          Trusted by Models & Brands
-        </h2>
-
-        <p className="mt-8 text-gray-600 leading-8">
-          "Lens Studio transformed my portfolio completely.
-          The quality, creativity and professionalism exceeded
-          my expectations."
-        </p>
-
-      </section>
+<Footer/>
+     
 
     </div>
+
+    </FadeIn>
   );
 }
 

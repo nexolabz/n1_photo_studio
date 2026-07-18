@@ -7,11 +7,13 @@ import {
   FaEnvelope,
   FaMapMarkerAlt,
 } from "react-icons/fa";
+import FadeIn from "../FadeIn";
 
 import { Link } from "react-scroll";
 
 function Footer() {
   return (
+    <FadeIn>
     <footer className="bg-[#080808] text-white border-t border-zinc-800">
 
       <div className="max-w-7xl mx-auto px-8 py-20">
@@ -170,6 +172,7 @@ function Footer() {
       </div>
 
     </footer>
+    </FadeIn>
   );
 }
 

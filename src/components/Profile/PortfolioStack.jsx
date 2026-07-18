@@ -95,7 +95,7 @@ function PortfolioStack({
         </motion.div>
       </div>
 
-      {/* Gallery */}
+     
 
       <motion.div
         initial={false}

@@ -12,7 +12,7 @@ function HomePage() {
     
     
       <Nav />
-
+<div>
       <Home />
       <Profile />
       <Services />
@@ -20,6 +20,8 @@ function HomePage() {
       <Contact />
 
       <Footer />
+</div>
+
 
      
     </>

@@ -1,71 +1,28 @@
 import { useState, useEffect } from "react";
+import heroVideo from "../../assets/hero.mp4";
 
-import hero1 from "../../assets/homebg/homebg 1.webp";
-import hero2 from "../../assets/homebg/homebg 2.webp";
-import hero3 from "../../assets/homebg/homebg 3.webp";
-import hero4 from "../../assets/homebg/homebg 4.webp";
-import hero5 from "../../assets/homebg/homebg 5.webp";
-import hero6 from "../../assets/homebg/homebg 6.webp";
-import hero7 from "../../assets/homebg/homebg 7.webp";
-import hero8 from "../../assets/homebg/homebg 8.webp";
+import FadeIn from "../FadeIn";
 
-const images = [
-  hero1,
-  hero2,
-  hero3,
-  hero4,
-  hero5,
-  hero6,
-  hero7,
-  hero8,
-];
 
 const Home = () => {
-  const [currentImage, setCurrentImage] = useState(0);
-  const [fade, setFade] = useState(true);
-
-  useEffect(() => {
-  const interval = setInterval(() => {
-
-    setFade(false);
-
-    setTimeout(() => {
-
-      setCurrentImage(prev => (prev + 1) % images.length);
-
-      requestAnimationFrame(() => {
-        setFade(true);
-      });
-
-    },700); // same as transition duration
-
-  },3000);
-
-  return () => clearInterval(interval);
-
-},[]);
-
-
+  
   return (
+    <FadeIn>
     <section
       id="home"
       className="relative min-h-screen overflow-hidden flex items-center "
     >
-      
-      <img
-        src={images[currentImage]}
-        alt="Hero"
-        className={`absolute inset-0 w-full h-full object-cover object-top transition-opacity duration-700 ${
-          fade ? "opacity-100" : "opacity-0"
-        }`}
-      />
 
+      <video
+  autoPlay
+  muted
+  loop
+  playsInline
+  className="absolute inset-0 w-full h-full object-cover transition-opacity"
+>
+  <source src={heroVideo} type="video/mp4" />
+</video>
       
-     <div
-  className={`absolute inset-0 bg-black transition-opacity duration-700 ${
-    fade ? "opacity-30" : "opacity-70"
-  }`}
-/>
 
       
       <div className="relative z-10 px-6 md:px-12 text-white">
@@ -90,6 +47,7 @@ const Home = () => {
         </p>
       </div>
     </section>
+    </FadeIn>
   );
 };
 

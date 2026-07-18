@@ -1,8 +1,10 @@
-import Aboutimg from "../../assets/Abouti.webp";
+import Aboutimg from "../../assets/About2.png";
 import { FaCheckCircle } from "react-icons/fa";
+import FadeIn from "../FadeIn";
 
 function About() {
   return (
+    <FadeIn>
     <section
       id="about"
       className="relative min-h-screen flex items-center overflow-hidden"
@@ -91,6 +93,7 @@ function About() {
 
       </div>
     </section>
+    </FadeIn>
   );
 }
 

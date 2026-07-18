@@ -1,4 +1,4 @@
-// Wedding Images
+
 const weddingImages = Object.values(
   import.meta.glob("../../assets/portfolio/wedding/*.webp", {
     eager: true,
@@ -6,7 +6,7 @@ const weddingImages = Object.values(
   })
 );
 
-// Fashion Images
+
 const fashionImages = Object.values(
   import.meta.glob("../../assets/portfolio/fashion/*.webp", {
     eager: true,
@@ -14,7 +14,7 @@ const fashionImages = Object.values(
   })
 );
 
-// Portrait Images
+
 const portraitImages = Object.values(
   import.meta.glob("../../assets/portfolio/portrait/*.webp", {
     eager: true,
@@ -22,7 +22,7 @@ const portraitImages = Object.values(
   })
 );
 
-// Event Images
+
 const eventImages = Object.values(
   import.meta.glob("../../assets/portfolio/event/*.webp", {
     eager: true,
@@ -30,7 +30,7 @@ const eventImages = Object.values(
   })
 );
 
-// Commercial Images
+
 const commercialImages = Object.values(
   import.meta.glob("../../assets/portfolio/commercial/*.webp", {
     eager: true,

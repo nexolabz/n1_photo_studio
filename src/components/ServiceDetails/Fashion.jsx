@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import Footer from "../../components/Footer/Footer";
 import {
   FaArrowLeft,
   FaCheckCircle,
@@ -6,22 +7,25 @@ import {
   FaStar,
 } from "react-icons/fa";
 
-// import fashionHero from "../../assets/fashion/fashion-hero.webp";
+import FadeIn from "../FadeIn";
 
-// import img1 from "../../assets/fashion/f1.webp";
-// import img2 from "../../assets/fashion/f2.webp";
-// import img3 from "../../assets/fashion/f3.webp";
-// import img4 from "../../assets/fashion/f4.webp";
-// import img5 from "../../assets/fashion/f5.webp";
-// import img6 from "../../assets/fashion/f6.webp";
+ import fashionHero from "../../assets/fashion-hero.jpg";
 
-//const gallery = [img1, img2, img3, img4, img5, img6];
+import img1 from "../../assets/portfolio/fashion/fa1.webp";
+import img2 from "../../assets/portfolio/fashion/fa2.webp";
+import img3 from "../../assets/portfolio/fashion/fa3.webp";
+import img4 from "../../assets/portfolio/fashion/fa4.webp";
+import img5 from "../../assets/portfolio/fashion/fa5.webp";
+import img6 from "../../assets/portfolio/fashion/fa6.webp";
+
+const gallery = [img1, img2, img3, img4, img5, img6];
 
 function Fashion() {
   return (
+    <FadeIn>
     <div className="bg-[#F8F6F3] text-black min-h-screen">
 
-      {/* Header */}
+      
       <div className="max-w-7xl mx-auto px-6 py-6 flex justify-between items-center">
 
         <Link
@@ -39,103 +43,59 @@ function Fashion() {
 
       </div>
 
-      {/* Hero */}
+     
 
-      <div className="max-w-7xl mx-auto px-6 py-10 grid lg:grid-cols-2 gap-14 items-center">
+     
 
-        <div>
+<div className="max-w-7xl mx-auto px-6 py-10 grid lg:grid-cols-2 gap-14 items-center">
 
-          <p className="uppercase tracking-[5px] text-yellow-500 font-semibold">
-            Fashion Photography
-          </p>
+  
 
-          <h1 className="text-5xl lg:text-7xl font-black mt-5 leading-tight">
-            WE CREATE
-            <span className="text-yellow-500">
-              {" "}ICONIC
-            </span>
-            <br />
-            FASHION STORIES
-          </h1>
+  <div>
 
-          <p className="text-gray-600 mt-8 leading-8">
-            Premium fashion photography for models,
-            designers, influencers and clothing brands.
-            From studio editorials to luxury outdoor campaigns,
-            we deliver images that define your identity.
-          </p>
+    <img
+      src={fashionHero}
+      alt="Fashion"
+      className="rounded-3xl shadow-2xl w-full h-[600px] object-cover"
+    />
 
-          <Link to="/booking">
-            <button className="mt-10 bg-yellow-400 hover:bg-yellow-500 text-black px-8 py-4 rounded-full font-semibold duration-300">
-              Book Your Shoot
-            </button>
-          </Link>
+  </div>
 
-        </div>
+  
 
-        {/* <div>
+  <div>
 
-          <img
-            src={fashionHero}
-            alt=""
-            className="rounded-3xl shadow-2xl w-full h-[600px] object-cover"
-          />
+    <p className="uppercase tracking-[5px] text-yellow-500 font-semibold">
+      Fashion Photography
+    </p>
 
-        </div> */}
+    <h1 className="text-5xl lg:text-7xl font-black mt-5 leading-tight">
+      WE CREATE
+      <span className="text-yellow-500"> ICONIC</span>
+      <br />
+      FASHION STORIES
+    </h1>
 
-      </div>
+    <p className="text-gray-600 mt-8 leading-8">
+      Premium fashion photography for models,
+      designers, influencers and clothing brands.
+      From studio editorials to luxury outdoor campaigns,
+      we deliver images that define your identity.
+    </p>
 
-      {/* About */}
+    <Link to="/booking">
+      <button className="mt-10 bg-yellow-400 hover:bg-yellow-500 text-black px-8 py-4 rounded-full font-semibold duration-300">
+        Book Your Shoot
+      </button>
+    </Link>
 
-      <section className="max-w-7xl mx-auto px-6 py-24">
+  </div>
 
-        <div className="text-center">
+      
+</div>
+      
 
-          <h2 className="text-5xl font-black">
-            WHY CHOOSE
-            <span className="text-yellow-500"> US</span>
-          </h2>
-
-          <p className="mt-6 text-gray-600 max-w-3xl mx-auto leading-8">
-            We help fashion brands, models and influencers
-            build premium portfolios through creative direction,
-            cinematic lighting and high-end editing.
-          </p>
-
-        </div>
-
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mt-16">
-
-          {[
-            "Editorial Photography",
-            "Studio Shoot",
-            "Outdoor Campaign",
-            "Professional Retouching",
-            "Brand Promotion",
-            "Creative Direction",
-            "Model Portfolio",
-            "Luxury Lighting",
-          ].map((item) => (
-
-            <div
-              key={item}
-              className="bg-white rounded-2xl shadow-lg p-6"
-            >
-              <FaCheckCircle className="text-yellow-500 text-3xl mb-4" />
-
-              <h3 className="font-semibold text-lg">
-                {item}
-              </h3>
-
-            </div>
-
-          ))}
-
-        </div>
-
-      </section>
-
-      {/* Gallery */}
+      
 
       <section className="max-w-7xl mx-auto px-6 py-20">
 
@@ -150,7 +110,7 @@ function Fashion() {
 
         </div>
 
-        {/* <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
 
           {gallery.map((image, index) => (
 
@@ -158,16 +118,16 @@ function Fashion() {
               key={index}
               src={image}
               alt=""
-              className="rounded-3xl h-[380px] w-full object-cover hover:scale-105 duration-300 cursor-pointer"
+              className="rounded-3xl h-[380px] w-full object-cover hover:scale-105 duration-300 cursor-pointer bg-white p-3 shadow-2xl"
             />
 
           ))}
 
-        </div> */}
+        </div>
 
       </section>
 
-      {/* Packages */}
+      
 
       <section className="max-w-7xl mx-auto px-6 py-24">
 
@@ -246,25 +206,11 @@ function Fashion() {
 
       </section>
 
-      {/* Review */}
-
-      <section className="max-w-5xl mx-auto px-6 py-24 text-center">
-
-        <FaStar className="text-yellow-500 text-6xl mx-auto mb-6" />
-
-        <h2 className="text-4xl font-black">
-          Trusted by Models & Brands
-        </h2>
-
-        <p className="mt-8 text-gray-600 leading-8">
-          "Lens Studio transformed my portfolio completely.
-          The quality, creativity and professionalism exceeded
-          my expectations."
-        </p>
-
-      </section>
+     <Footer/>
 
     </div>
+
+    </FadeIn>
   );
 }
 

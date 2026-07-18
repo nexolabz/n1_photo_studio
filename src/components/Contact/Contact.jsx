@@ -1,4 +1,5 @@
-import contactBg from "../../assets/contact.webp";
+import contactBg from "../../assets/contact.png";
+import FadeIn from "../FadeIn";
 import {
   FaPhoneAlt,
   FaEnvelope,
@@ -25,6 +26,8 @@ function Contact() {
 
 
   return (
+
+    <FadeIn>
     <section
       id="contact"
       className="relative min-h-screen flex items-center"
@@ -59,11 +62,11 @@ function Contact() {
               </span>
             </h2>
 
-            <p className="text-yellow-500 text-xl mt-8 leading-8">
+            <p className="text-black text-2xl mt-8 leading-8">
               We'd love to hear your story.
               Whether it's your wedding,
               portrait session or commercial
-              shoot, let's create something
+              shoot, <br />let's create something
               unforgettable together.
             </p>
 
@@ -153,6 +156,7 @@ function Contact() {
       </div>
 
     </section>
+    </FadeIn>
   );
 }
 
